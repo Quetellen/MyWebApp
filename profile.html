@@ -8,16 +8,22 @@
     <style>
         div {
             text-align: center;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.2);
+            border-radius: 12px;
             width: 240px;
             margin-left: auto;
             margin-right: auto;
             padding: 12px;
+            background: linear-gradient(120deg,#39ef74,#4600f1 100%);
+            animation: rotateCard 7s infinite;
         }
-        img {
+        img{
             width: 128px;
             height: 128px;
             border-radius: 50%;
+        }
+        @keyframes rotateCard{
+            50% {transform: rotate(360deg);}
         }
     </style>
 </head>
